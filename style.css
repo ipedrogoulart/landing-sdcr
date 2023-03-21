@@ -10,14 +10,23 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+
+:root{
+    --p-color: #5C5F5A;
+    --title-color: #222C3D;
+    --bg-light-color: #fff; 
+} 
+
 body, html{
     margin-left: -1px;
+    background-color: var(--bg-light-color)
 }
 
 .tudo{
     margin-left: auto;
     margin-right: auto;
     max-width: 1366px;
+    background-color: var(--bg-light-color)
 }
 
 .thenavbar{
@@ -52,7 +61,7 @@ body, html{
 }
 
 .thenavbar-menu a{
-    color: #5C5F5A;
+    color: var(--p-color);
     font-size: 16px;
     font-weight: 300;
     cursor: pointer;
@@ -77,7 +86,7 @@ body, html{
     width: 50px;
     height: 30px;
     margin: 10px 20px 0 0;
-    background-color: #fff;
+    background-color: var(--bg-light-color);
 }
 
 .login:hover{
@@ -89,7 +98,7 @@ body, html{
     height: 50px;
     border-radius: 30px;
     border: #4B3FF5 solid 1px;   
-    background-color: #fff;
+    background-color: var(--bg-light-color);
     transition: 0.3s;
 }
 .singup:hover{
@@ -115,7 +124,7 @@ body, html{
     font-size: 70px;
     font-weight:600;
     letter-spacing: -2px;
-    color: #222C3D;
+    color: var(--title-color);
     line-height: 75px;
     text-align: justify;
     margin-bottom: 25px;
@@ -125,7 +134,7 @@ body, html{
     font-size: 16px;
     font-weight: 300;
     width: 80%;
-    color: #5C5F5A;
+    color: var(--p-color);
     line-height: 25px;
     text-align: start;
     margin-bottom: 25px;
@@ -156,12 +165,12 @@ body, html{
     width: 140px;
     height: 50px;
     margin-left: 10px;
-    color: #5C5F5A;
-    background-color: #ffffff;
+    color: var(--p-color);
+    background-color: var(--bg-light-color);
     font-size: 14px;
     font-weight: 400;
     padding: 2px 13px 4px 10px;
-    border: solid 1px #5C5F5A;
+    border: solid 1px var(--p-color);
     border-radius: 30px;
     cursor:pointer;
     transition: 0.3s;
@@ -173,12 +182,10 @@ body, html{
 .header-bt1 i, .header-bt2 i{
     margin-right: 5px;
     font-size: 16px;
-    line-height: -5px;
 }
 
 .ft1{
     width: 42%;
-    background-color: #ffffff;
     padding: 10px 10px 2px 10px;
     border-radius: 20px 20px 15px 15px;
     height: 70%;
@@ -225,7 +232,7 @@ body, html{
 
 .text-sec1{
     text-align: center;
-    color: #222C3D;
+    color: var(--title-color);
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
@@ -245,19 +252,16 @@ body, html{
     height:100%;
     flex-wrap: wrap;
     justify-content: space-around;
-background-color: violet;
 }
 
 .thegrid{
     width: 140px;
     height: 30px;
     margin-top: 40px;
- background-color: yellow;
 }
 .thegrid img{
     opacity: 50%;
     mix-blend-mode:luminosity;
-    background-color: yellowgreen;
 }
 
 .thegrid img:nth-child(1){
@@ -280,7 +284,7 @@ background-color: violet;
 
 .text-sec2 h1{
     font-size: 60px; 
-    color: #222C3D;
+    color: var(--title-color);
     font-weight: 600;
     letter-spacing: -3px;
 }
@@ -290,7 +294,7 @@ background-color: violet;
 }
 
 .text-sec2 p{
-    color: #5C5F5A;
+    color: var(--p-color);
     word-spacing: 2px;
     letter-spacing: 1px;
     font-size: 18px;
@@ -309,13 +313,13 @@ background-color: violet;
 
 .feed h2{
     font-size: 30px;
-    color: #222C3D;
+    color: var(--title-color);
     font-weight: 600;
     letter-spacing: -2px;
 }
 
 .feed p{
-    color: #5C5F5A;
+    color: var(--p-color);
     word-spacing: -1px;
     font-size: 17px;
     font-weight: 300;
@@ -450,7 +454,7 @@ background-color: violet;
 
 .sec4 h2{
     font-size: 30px;
-    color: #222C3D;
+    color: var(--title-color);
     font-weight: 500;
     letter-spacing: -2px;
     padding-bottom: 90px;
@@ -458,7 +462,7 @@ background-color: violet;
 }
 
 .title-sec4{
-    color: #222C3D;
+    color: var(--title-color);
     font-size: 55px;
     font-weight: 600;
     letter-spacing: -2px;
@@ -480,7 +484,7 @@ background-color: violet;
     line-height: 70px;
     font-size: 20px;
     font-weight: 300;
-    color: #5C5F5A;
+    color: var(--p-color);
 }
 
 .switch {
@@ -518,7 +522,7 @@ background-color: violet;
     width: 80px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: var(--bg-light-color);
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50px;
@@ -541,7 +545,7 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    box-shadow: 1px 2px 10px #8d8c8c83;
+    box-shadow: 1px 2px 10px #8d8c8c83; 
     margin-top: 10px;
 }
 
@@ -563,7 +567,7 @@ input:checked + .slider:before {
     font-size: 54px;
     font-weight: 600;
     letter-spacing: -2px;
-    color: #222C3D;
+    color: var(--title-color);
     z-index: 100;
 }
 
@@ -2110,7 +2114,6 @@ footer p{
     .header-bt1 i, .header-bt2 i{
         margin-right: 5px;
         font-size: 16px;
-        line-height: -5px;
     }
 
     .ft2{
