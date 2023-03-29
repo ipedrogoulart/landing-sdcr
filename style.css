@@ -12,10 +12,33 @@
 
 
 :root{
-    --p-color: #5C5F5A;
     --title-color: #222C3D;
+    --p-color: #5C5F5A;
     --bg-light-color: #fff; 
+    --hover1-color: #e4e4e4;
+    --some-purple-color: #4B3FF5;
+    --icon-text-feed-color: #4b3ff536;
+    --circle-absolut-color: #ffffff18;
+    --darkdark-color: #222C3D;
+    --hover2-color: #5C5F5A;
+    --hover3-color: #3930b8;
+    --hover4-color: #222C3D;
 } 
+
+.dark{
+    --title-color: #fff;
+    --p-color:  #e0e0e0;
+    --bg-light-color: #222C3D;
+    --hover1-color: #181f2b;
+    --some-purple-color: #fff;
+    --icon-text-feed-color: #ffffff36;
+    --circle-absolut-color: #222c3d00;
+    --darkdark-color: #181f2b;
+    --hover2-color: #fff;
+    --hover3-color: #e0e0e0;
+    --hover4-color: #e0e0e0;
+
+}
 
 body, html{
     margin-left: -1px;
@@ -26,7 +49,8 @@ body, html{
     margin-left: auto;
     margin-right: auto;
     max-width: 1366px;
-    background-color: var(--bg-light-color)
+    background-color: var(--bg-light-color);
+    transition: 0.3s
 }
 
 .thenavbar{
@@ -36,12 +60,16 @@ body, html{
 }
 
 .logo{
-    color: #222C3D;
+    color: var(--title-color);
     font-weight: 600;
     font-size: 40px;
     line-height: 30px;
     text-decoration: none;
     margin-right: 190px;
+}
+
+.logo:hover{
+    color: var(--hover4-color);
 }
 
 .logo strong{
@@ -67,7 +95,7 @@ body, html{
     cursor: pointer;
 }
 .thenavbar-menu a:hover{
-    color: #181f2b;
+    color: var(--title-color);
 }
 
 .thenavbar-ul{
@@ -76,7 +104,7 @@ body, html{
     margin-top: 10px;  
 }
 .thenavbar-ul li button{
-    color: #4B3FF5;
+    color: var(--some-purple-color);
     font-size: 14px;
     cursor: pointer;
 }
@@ -90,19 +118,19 @@ body, html{
 }
 
 .login:hover{
-    color: #3930b8;
+    color: var(--hover3-color);
 }
 
 .singup{
     width: 110px;
     height: 50px;
     border-radius: 30px;
-    border: #4B3FF5 solid 1px;   
+    border: var(--some-purple-color) solid 1px;   
     background-color: var(--bg-light-color);
     transition: 0.3s;
 }
 .singup:hover{
-    background-color: #e4e4e4;
+    background-color: var(--hover1-color);
    
 }
 
@@ -176,7 +204,7 @@ body, html{
     transition: 0.3s;
 }
 .header-bt2:hover{
-    background-color: #e4e4e4;
+    background-color:  var(--hover1-color);
 }
 
 .header-bt1 i, .header-bt2 i{
@@ -248,7 +276,7 @@ body, html{
 
 .brands{
     display: flex;
-    width: 70%;
+    width: 60%;
     height:100%;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -345,7 +373,7 @@ body, html{
     left: -35px;
     top: 30px;
     width: 30px;
-    background-color: #4b3ff536;
+    background-color: var(--icon-text-feed-color);
     border-radius: 20px;
     padding: 5px;
 }
@@ -403,7 +431,7 @@ body, html{
     bottom: -30px;
     left: -35px;
     width: 30px;
-    background-color: #4b3ff536;
+    background-color: var(--icon-text-feed-color);
     border-radius: 20px;
     padding: 5px;
 }
@@ -430,7 +458,7 @@ body, html{
     width: 30px;
     padding: 5px;
     border-radius: 20px;
-    background-color: #4b3ff536;
+    background-color: var(--icon-text-feed-color);
 }
 
 .img-feed3{
@@ -590,7 +618,7 @@ input:checked + .slider:before {
     background-color: #ffffff00;
     position:relative;
     top: 40px;
-    border: 60px solid #ffffff18;
+    border: 60px solid var(--circle-absolut-color);
     z-index: 10;
 }
 
@@ -601,7 +629,7 @@ input:checked + .slider:before {
     background-color: #ffffff00;
     position:relative;
     top: 40px;
-    border: 60px solid #ffffff18;
+    border: 60px solid var(--circle-absolut-color);
     z-index: 20;
 }
 
@@ -662,6 +690,8 @@ input:checked + .slider:before {
     border-bottom: 1px #fff solid;
     height: 20px;
     z-index: 20;
+    transition: 0.3s;
+
 }
 
 .purple-input a:hover{
@@ -677,7 +707,7 @@ input:checked + .slider:before {
 
 
 .black{
-    background-color: #222C3D;
+    background-color: var(--darkdark-color);
     border-radius: 25px;
     width: 450px;
     height: auto;
@@ -722,8 +752,9 @@ input:checked + .slider:before {
     border-bottom: 1px #fff solid;
     height: 20px;
     z-index: 60;
-
+    transition: 0.3s;
 }
+
 .black-input a:hover{
     color: #b1b6c2;
 }
@@ -740,7 +771,7 @@ input:checked + .slider:before {
 /*//////SEC 6/////*/
 
 .sec6{
-    background-color: #222C3D;
+    background-color: var(--darkdark-color);
     width: 100%;
     height: 750px;
     border-radius: 80px 80px 0 0;
@@ -930,6 +961,13 @@ footer p{
     }
 }
 
+@media screen and (max-width: 1165px){
+    .brands{
+    width: 70%;
+
+    }
+}
+
 @media screen and (max-width: 1160px){
     .logo{
         margin-right: 90px;
@@ -1091,6 +1129,12 @@ footer p{
     }
 
     .text-sec1{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 998px){
+    .brands{
         width: 80%;
     }
 }
